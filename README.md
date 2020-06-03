@@ -38,7 +38,7 @@ Merged all the data into multiple tables into CityBike Data Table.
 
 ```sql
 Insert into dbo.citybikedata (
-		   [BIKEID]
+       [BIKEID]
       ,[TRIPDURATION]
       ,[STARTTIME]
       ,[STOPTIME]
@@ -55,8 +55,8 @@ Insert into dbo.citybikedata (
       ,[GENDER])
 
 Select 
-	     [_bikeid_]
-	    ,[_tripduration_]
+       [_bikeid_]
+      ,[_tripduration_]
       ,[_starttime_]
       ,[_stoptime_]
       ,[_start_station_id_]
@@ -70,37 +70,45 @@ Select
       ,[_usertype_]
       ,[_birth_year_]
       ,[_gender_]
-	  from [dbo].[201907-citibike-tripdata]
+from [dbo].[201907-citibike-tripdata]
 ```
 #### Connecting DB Server to Tableau Desktop
 Connected Tableau Desktop to SSMS Server to establish live connection.
 
 #### Analysis
 
-1. Count of Male Riders was higher than riders who belonged to Female and Unkown gender.
+1. Count of Male Riders was higher than riders who belonged to Female and Unkown gender.  
 ** Notice in the screenshot one of the ride lasted for 390+ hours. This is most likely an error in data.
+
 ![](Images/Sum_of_Trip_Duration_By_Birth_Year_and_Gender.JPG)
 
 2. Ridership was higher in Warmer months compared to colder months.
+
 ![](Images/Total_Ridership_By_Date.JPG)
 
 3. Customer vs Subscriber
 Count of Subscribers was higher than Customers. Also, both the counts are higher in warmer months than colder months.
+
 ![](Images/Customer_vs_Subscriber.JPG)
 
 4. Most popular Destinations for Riders were closer to Transit stations or Tourist Attractions.
+
 ![](Images/Top_10_Stations_to_End_the_Journey.JPG)
 
 5. Chart of Top 100 Bikes by Usage. They might also be most likely needing repairs or maintenance.
+
 ![](Images/Top_100_Bikes_By_Usage_or_May_Need_Repair.JPG)
 
 6. Map
 As per the map, average trip duration was higher  near Financial District in Lower Manhattan, Hudson Yards & Central Park in Upper Manhattan as well as parts of Brooklyn near Brooklyn Bridge.
+
 ![](Images/Map.JPG)
 
 7. Dashboard#1
+
 ![](Images/Dashboard_1.JPG)
 
 8. Dashboard#2
+
 ![](Images/Dashboard_2.JPG)
 
