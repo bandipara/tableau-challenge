@@ -336,212 +336,7 @@
           <groupfilter function='level-members' level='[dy:STARTTIME:ok]' />
         </groupfilter>
       </group>
-      <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Citi_Bike.twb Files/CityBikeData (CityBike).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>BIKEID</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[BIKEID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>BIKEID</remote-alias>
-              <ordinal>0</ordinal>
-              <family>CityBikeData</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>48923</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>TRIPDURATION</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[TRIPDURATION]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>TRIPDURATION</remote-alias>
-              <ordinal>1</ordinal>
-              <family>CityBikeData</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>11809</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>STARTTIME</remote-name>
-              <remote-type>135</remote-type>
-              <local-name>[STARTTIME]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>STARTTIME</remote-alias>
-              <ordinal>2</ordinal>
-              <family>CityBikeData</family>
-              <local-type>datetime</local-type>
-              <aggregation>Year</aggregation>
-              <approx-count>11011268</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>STOPTIME</remote-name>
-              <remote-type>135</remote-type>
-              <local-name>[STOPTIME]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>STOPTIME</remote-alias>
-              <ordinal>3</ordinal>
-              <family>CityBikeData</family>
-              <local-type>datetime</local-type>
-              <aggregation>Year</aggregation>
-              <approx-count>11032817</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>START_STATION_ID</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[START_STATION_ID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>START_STATION_ID</remote-alias>
-              <ordinal>4</ordinal>
-              <family>CityBikeData</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1132</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>START_STATION_NAME</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[START_STATION_NAME]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>START_STATION_NAME</remote-alias>
-              <ordinal>5</ordinal>
-              <family>CityBikeData</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1156</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>START_STATION_LATITUDE</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[START_STATION_LATITUDE]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>START_STATION_LATITUDE</remote-alias>
-              <ordinal>6</ordinal>
-              <family>CityBikeData</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1141</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>START_STATION_LONGITUDE</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[START_STATION_LONGITUDE]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>START_STATION_LONGITUDE</remote-alias>
-              <ordinal>7</ordinal>
-              <family>CityBikeData</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1142</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>END_STATION_ID</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[END_STATION_ID]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>END_STATION_ID</remote-alias>
-              <ordinal>8</ordinal>
-              <family>CityBikeData</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1113</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>END_STATION_NAME</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[END_STATION_NAME]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>END_STATION_NAME</remote-alias>
-              <ordinal>9</ordinal>
-              <family>CityBikeData</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1113</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>END_STATION_LATITUDE</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[END_STATION_LATITUDE]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>END_STATION_LATITUDE</remote-alias>
-              <ordinal>10</ordinal>
-              <family>CityBikeData</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1111</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>END_STATION_LONGITUDE</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[END_STATION_LONGITUDE]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>END_STATION_LONGITUDE</remote-alias>
-              <ordinal>11</ordinal>
-              <family>CityBikeData</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1112</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>USERTYPE</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[USERTYPE]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>USERTYPE</remote-alias>
-              <ordinal>12</ordinal>
-              <family>CityBikeData</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>BIRTH_YEAR</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[BIRTH_YEAR]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>BIRTH_YEAR</remote-alias>
-              <ordinal>13</ordinal>
-              <family>CityBikeData</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>116</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>GENDER</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[GENDER]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>GENDER</remote-alias>
-              <ordinal>14</ordinal>
-              <family>CityBikeData</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>3</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.455182' measure-ordering='alphabetic' measure-percentage='0.544818' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.429008' measure-ordering='alphabetic' measure-percentage='0.570992' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -550,21 +345,6 @@
   <mapsources>
     <mapsource name='Tableau' />
   </mapsources>
-  <shared-views>
-    <shared-view name='federated.0wlshtm1w09evc0zjqg2d1ymcb5e'>
-      <datasources>
-        <datasource caption='CityBikeData (CityBike)' name='federated.0wlshtm1w09evc0zjqg2d1ymcb5e' />
-      </datasources>
-      <datasource-dependencies datasource='federated.0wlshtm1w09evc0zjqg2d1ymcb5e'>
-        <column caption='Starttime' datatype='datetime' name='[STARTTIME]' role='dimension' type='ordinal' />
-        <column-instance column='[STARTTIME]' derivation='None' name='[none:STARTTIME:qk]' pivot='key' type='quantitative' />
-      </datasource-dependencies>
-      <filter class='quantitative' column='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]' included-values='in-range-or-null'>
-        <min>#2019-07-01 00:00:00.133#</min>
-        <max>#2019-07-22 23:59:59#</max>
-      </filter>
-    </shared-view>
-  </shared-views>
   <actions>
     <action caption='Filter 1 (generated)' name='[Action1]'>
       <activation auto-clear='true' type='on-select' />
@@ -619,7 +399,6 @@
             <column-instance column='[TRIPDURATION]' derivation='Avg' name='[avg:TRIPDURATION:qk]' pivot='key' type='quantitative' />
             <column-instance column='[STARTTIME]' derivation='Day' name='[dy:STARTTIME:ok]' pivot='key' type='ordinal' />
             <column-instance column='[STARTTIME]' derivation='Month' name='[mn:STARTTIME:ok]' pivot='key' type='ordinal' />
-            <column-instance column='[STARTTIME]' derivation='None' name='[none:STARTTIME:qk]' pivot='key' type='quantitative' />
             <column-instance column='[START_STATION_LATITUDE]' derivation='None' name='[none:START_STATION_LATITUDE:qk]' pivot='key' type='quantitative' />
             <column-instance column='[START_STATION_LONGITUDE]' derivation='None' name='[none:START_STATION_LONGITUDE:qk]' pivot='key' type='quantitative' />
             <column-instance column='[STARTTIME]' derivation='Quarter' name='[qr:STARTTIME:ok]' pivot='key' type='ordinal' />
@@ -636,17 +415,16 @@
           </filter>
           <slices>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[Action (YEAR(Starttime),QUARTER(Starttime),MONTH(Starttime),DAY(Starttime))]</column>
-            <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LONGITUDE:qk]' field-type='quantitative' max='-8220592.46' min='-8243700.4000000004' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LATITUDE:qk]' field-type='quantitative' max='4980449.8200000003' min='4966848.7999999998' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LONGITUDE:qk]' field-type='quantitative' max='-8220592.46' min='-8243700.4' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LATITUDE:qk]' field-type='quantitative' max='4980449.82' min='4966848.8' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
-            <encoding attr='color' center='1000.0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[avg:TRIPDURATION:qk]' max='12756.375886524822' min='0.0' num-steps='4' palette='red_green_diverging_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[avg:TRIPDURATION:qk]' min='0.0' palette='red_green_diverging_10_0' type='interpolated' />
           </style-rule>
           <style-rule element='map-layer'>
             <format attr='enabled' id='b01002_001e' value='false' />
@@ -720,16 +498,11 @@
           <datasource-dependencies datasource='federated.0wlshtm1w09evc0zjqg2d1ymcb5e'>
             <column caption='Birth Year' datatype='integer' name='[BIRTH_YEAR]' role='dimension' type='quantitative' />
             <column caption='Gender' datatype='integer' name='[GENDER]' role='measure' type='quantitative' />
-            <column caption='Starttime' datatype='datetime' name='[STARTTIME]' role='dimension' type='ordinal' />
             <column caption='Tripduration' datatype='integer' name='[TRIPDURATION]' role='measure' type='quantitative' />
             <column-instance column='[BIRTH_YEAR]' derivation='None' name='[none:BIRTH_YEAR:ok]' pivot='key' type='ordinal' />
             <column-instance column='[GENDER]' derivation='None' name='[none:GENDER:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[STARTTIME]' derivation='None' name='[none:STARTTIME:qk]' pivot='key' type='quantitative' />
             <column-instance column='[TRIPDURATION]' derivation='Sum' name='[sum:TRIPDURATION:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <slices>
-            <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]</column>
-          </slices>
           <aggregation value='true' />
         </view>
         <style>
@@ -791,6 +564,7 @@
               <groupfilter function='level-members' level='[none:START_STATION_LONGITUDE:ok]' />
             </groupfilter>
           </filter>
+          <filter class='quantitative' column='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]' included-values='all' />
           <slices>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]</column>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[Action (Start Station Latitude,Start Station Longitude)]</column>
@@ -849,7 +623,6 @@
             <column caption='Usertype' datatype='string' name='[USERTYPE]' role='dimension' type='nominal' />
             <column-instance column='[STARTTIME]' derivation='Day' name='[dy:STARTTIME:ok]' pivot='key' type='ordinal' />
             <column-instance column='[STARTTIME]' derivation='Month' name='[mn:STARTTIME:ok]' pivot='key' type='ordinal' />
-            <column-instance column='[STARTTIME]' derivation='None' name='[none:STARTTIME:qk]' pivot='key' type='quantitative' />
             <column-instance column='[START_STATION_LATITUDE]' derivation='None' name='[none:START_STATION_LATITUDE:ok]' pivot='key' type='ordinal' />
             <column-instance column='[START_STATION_LONGITUDE]' derivation='None' name='[none:START_STATION_LONGITUDE:ok]' pivot='key' type='ordinal' />
             <column-instance column='[STARTTIME]' derivation='Quarter' name='[qr:STARTTIME:ok]' pivot='key' type='ordinal' />
@@ -874,7 +647,6 @@
           <slices>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[Action (YEAR(Starttime),QUARTER(Starttime),MONTH(Starttime),DAY(Starttime))]</column>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[Action (Start Station Latitude,Start Station Longitude)]</column>
-            <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -965,7 +737,6 @@
             <column-instance column='[STARTTIME]' derivation='Month' name='[mn:STARTTIME:ok]' pivot='key' type='ordinal' />
             <column-instance column='[BIKEID]' derivation='None' name='[none:BIKEID:ok]' pivot='key' type='ordinal' />
             <column-instance column='[END_STATION_NAME]' derivation='None' name='[none:END_STATION_NAME:nk]' pivot='key' type='nominal' />
-            <column-instance column='[STARTTIME]' derivation='None' name='[none:STARTTIME:qk]' pivot='key' type='quantitative' />
             <column-instance column='[START_STATION_LATITUDE]' derivation='None' name='[none:START_STATION_LATITUDE:ok]' pivot='key' type='ordinal' />
             <column-instance column='[START_STATION_LONGITUDE]' derivation='None' name='[none:START_STATION_LONGITUDE:ok]' pivot='key' type='ordinal' />
             <column-instance column='[STARTTIME]' derivation='Quarter' name='[qr:STARTTIME:ok]' pivot='key' type='ordinal' />
@@ -1004,7 +775,6 @@
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[Action (YEAR(Starttime),QUARTER(Starttime),MONTH(Starttime),DAY(Starttime))]</column>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[Action (Start Station Latitude,Start Station Longitude)]</column>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[Action (Bikeid)]</column>
-            <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1053,10 +823,8 @@
                 <table-calc ordering-type='Rows' />
               </calculation>
             </column>
-            <column caption='Starttime' datatype='datetime' name='[STARTTIME]' role='dimension' type='ordinal' />
             <column caption='Tripduration' datatype='integer' name='[TRIPDURATION]' role='measure' type='quantitative' />
             <column-instance column='[BIKEID]' derivation='None' name='[none:BIKEID:ok]' pivot='key' type='ordinal' />
-            <column-instance column='[STARTTIME]' derivation='None' name='[none:STARTTIME:qk]' pivot='key' type='quantitative' />
             <column-instance column='[TRIPDURATION]' derivation='Sum' name='[sum:TRIPDURATION:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_177329278500704258]' derivation='User' name='[usr:Calculation_177329278500704258:qk:2]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Columns' />
@@ -1071,7 +839,6 @@
           </shelf-sorts>
           <slices>
             <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[usr:Calculation_177329278500704258:qk:2]</column>
-            <column>[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:STARTTIME:qk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1112,7 +879,7 @@
         <column-instance column='[STARTTIME]' derivation='None' name='[none:STARTTIME:qk]' pivot='key' type='quantitative' />
       </datasource-dependencies>
       <zones>
-        <zone h='47250' id='3' name='Sheet 1' w='96600' x='1100' y='9750' />
+        <zone h='47250' id='3' name='Sheet 1' w='99800' x='-800' y='9375' />
         <zone fixed-size='96' h='9375' id='8' is-fixed='true' name='Sheet 1' pane-specification-id='0' param='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[avg:TRIPDURATION:qk]' type='color' w='23200' x='1100' y='1125' />
         <zone h='42500' id='16' name='Sheet 4' w='47500' x='51500' y='56625' />
         <zone h='43000' id='28' name='Sheet 3' w='51200' x='100' y='56875' />
@@ -1260,8 +1027,8 @@
       <simple-id uuid='{92A7F566-3D6E-4B0B-A9C0-AE444D186A3B}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
-    <window class='worksheet' name='Sheet 1'>
+  <windows source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='240'>
@@ -1418,7 +1185,7 @@
       </cards>
       <simple-id uuid='{67893208-8329-4C59-9E8F-67475AF0EE13}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1' tab-color='#4f779a'>
+    <window class='dashboard' name='Dashboard 1' tab-color='#4f779a'>
       <viewpoints>
         <viewpoint name='Sheet 1'>
           <zoom type='entire-view' />
@@ -1430,7 +1197,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='33' />
+      <active id='-1' />
       <simple-id uuid='{BF22C6F2-8D83-4EB1-91BB-DD9214B863A6}' />
     </window>
     <window class='dashboard' name='Dashboard 2' tab-color='#4f779a'>
