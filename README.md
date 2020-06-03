@@ -1,6 +1,6 @@
 # Tableau - Citi Bike Analytics
 
-## Project Link: https://public.tableau.com/profile/bhargav6508#!/vizhome/Citi_Bike_15911516156260/Dashboard1
+#### Project Link: https://public.tableau.com/profile/bhargav6508#!/vizhome/Citi_Bike_15911516156260/Dashboard1
 
 ## Technology: Tableau Desktop, Tableau Public, Microsoft SQL Server, Excel
 
@@ -13,7 +13,6 @@ Created a Data base and a table in MS SQ Server:
 
 ```sql
 CREATE TABLE CityBikeData(
-	--ID INT IDENTITY(1,1),
 	BIKEID INT,
 	TRIPDURATION INT,	
 	STARTTIME DATETIME,
@@ -56,8 +55,8 @@ Insert into dbo.citybikedata (
       ,[GENDER])
 
 Select 
-	  [_bikeid_]
-	  ,[_tripduration_]
+	     [_bikeid_]
+	    ,[_tripduration_]
       ,[_starttime_]
       ,[_stoptime_]
       ,[_start_station_id_]
