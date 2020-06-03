@@ -420,11 +420,11 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LONGITUDE:qk]' field-type='quantitative' max='-8220592.46' min='-8243700.4' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LATITUDE:qk]' field-type='quantitative' max='4980449.82' min='4966848.8' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LONGITUDE:qk]' field-type='quantitative' max='-8222379.1563917529' min='-8245487.0963917533' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[none:START_STATION_LATITUDE:qk]' field-type='quantitative' max='4980629.3372468865' min='4966431.0565672135' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
-            <encoding attr='color' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[avg:TRIPDURATION:qk]' min='0.0' palette='red_green_diverging_10_0' type='interpolated' />
+            <encoding attr='color' center='1000.0' field='[federated.0wlshtm1w09evc0zjqg2d1ymcb5e].[avg:TRIPDURATION:qk]' max='12756.375886524822' min='0.0' num-steps='4' palette='red_green_diverging_10_0' type='interpolated' />
           </style-rule>
           <style-rule element='map-layer'>
             <format attr='enabled' id='b01002_001e' value='false' />
@@ -1028,7 +1028,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='44'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='240'>
@@ -1076,7 +1076,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1104,7 +1104,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1132,7 +1132,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1155,7 +1155,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1178,7 +1178,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1197,7 +1197,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='3' />
       <simple-id uuid='{BF22C6F2-8D83-4EB1-91BB-DD9214B863A6}' />
     </window>
     <window class='dashboard' name='Dashboard 2' tab-color='#4f779a'>
@@ -1208,7 +1208,7 @@
       <active id='-1' />
       <simple-id uuid='{EC0A65EF-77A3-46D4-BBC0-94835BFABCFB}' />
     </window>
-    <window class='dashboard' name='Story 1'>
+    <window class='dashboard' maximized='true' name='Story 1'>
       <viewpoints />
       <active id='-1' />
       <simple-id uuid='{DE29429A-7C9B-4AB2-A5CE-42247EAD3EF5}' />
