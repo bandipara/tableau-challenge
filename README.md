@@ -31,10 +31,10 @@ CREATE TABLE CityBikeData(
   ```
 
 #### Import Data
-Imported CSV files as flat files into multiple Tables.
+Imported CSV files with monthly data as flat files into multiple Tables.
 
 #### Merge all Data in CityBikeData Table
-Merged all the data into multiple tables into CityBike Data Table.
+Merged all the data from monthly table data into CityBike Data Table.
 
 ```sql
 Insert into dbo.citybikedata (
