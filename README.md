@@ -4,9 +4,9 @@
 
 ## Technology: Tableau Desktop, Tableau Public, Microsoft SQL Server, Excel
 
-#### Data Source(New York City): 
+#### Data Source: 
 Data was downloaded as CSV files from citi bike website for Ney York City.
-https://www.citibikenyc.com/system-data
+NYC: https://www.citibikenyc.com/system-data
 
 #### Created a Database and Table
 Created a Data base and a table in MS SQ Server:
